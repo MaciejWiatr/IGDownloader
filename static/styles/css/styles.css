@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+*, *::before, *::after {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: whitesmoke;
+  background-color: #2c3e50;
+  min-height: 100vh; }
+
+.download__container {
+  height: 100vh !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .download__container .download__wrapper {
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .download__container .download__wrapper .download__form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .download__container .download__wrapper .download__form .download__input {
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        border: 2px solid #95a5a6;
+        margin: 20px 0px;
+        box-sizing: border-box;
+        padding: 10px; }
+      .download__container .download__wrapper .download__form .download__button {
+        background-color: #8e44ad;
+        padding: 10px;
+        width: 100%;
+        height: 45px;
+        box-sizing: border-box;
+        border: none;
+        font-size: 1rem;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background-color .2s ease; }
+        .download__container .download__wrapper .download__form .download__button:hover {
+          background-color: #9b59b6; }
+    .download__container .download__wrapper .loading__wrapper {
+      visibility: hidden;
+      position: absolute;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      color: gray;
+      background-color: white;
+      border-radius: 5px;
+      padding: 30px;
+      box-shadow: 0px 10px 22px -1px rgba(0, 0, 0, 0.75); }
+      .download__container .download__wrapper .loading__wrapper .spinner__container {
+        margin-top: 20px;
+        text-align: center; }
+        .download__container .download__wrapper .loading__wrapper .spinner__container .loading__spinner {
+          transform-origin: center;
+          color: #8e44ad;
+          font-size: 2rem;
+          animation-name: spin;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    visibility: hidden; }
+  99% {
+    opacity: 1;
+    transform: translateY(0px); }
+  100% {
+    visibility: visible; } }
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible; }
+  99% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    visibility: hidden; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,8 @@
+/images/
+/node_modules/
+.venv/
+.vscode/
+Pipfile
+__pycache__/
+geckodriver.log
+package-lock.json
