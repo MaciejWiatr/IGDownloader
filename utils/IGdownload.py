@@ -38,6 +38,7 @@ class IGDownloader:
             os.mkdir("../images/")
 
     def download_img(self, link):
+
         self.__ensure_folder_exists()
         img_name = re.search(r"\/p/(.+[\w||\d])", link).group(1)
         src = self.__get_download_src(link)
@@ -51,3 +52,4 @@ class IGDownloader:
 
 if __name__ == "__main__":
     Downloader = IGDownloader()
+    Downloader.download_img('https://www.instagram.com/p/B6g5qrLlbgJ/')
